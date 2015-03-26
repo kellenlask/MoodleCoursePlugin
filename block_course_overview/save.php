@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Save course order in course_overview block
+ * Save course order in block_course_overview block
  *
  * @package    block_course_overview
  * @copyright  2012 Adam Olley <adam.olley@netspot.com.au>

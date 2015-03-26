@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * Helper functions for course_overview block
+ * Helper functions for block_course_overview block
  *
  * @package    block_course_overview
  * @copyright  2012 Adam Olley <adam.olley@netspot.com.au>
@@ -48,7 +48,7 @@ function block_course_overview_get_overviews($courses) {
 }
 
 /**
- * Sets user preference for maximum courses to be displayed in course_overview block
+ * Sets user preference for maximum courses to be displayed in block_course_overview block
  *
  * @param int $number maximum courses which should be visible
  */
@@ -57,7 +57,7 @@ function block_course_overview_update_mynumber($number) {
 }
 
 /**
- * Sets user course sorting preference in course_overview block
+ * Sets user course sorting preference in block_course_overview block
  *
  * @param array $sortorder list of course ids
  */
@@ -71,7 +71,7 @@ function block_course_overview_update_myorder($sortorder) {
 }
 
 /**
- * Gets user course sorting preference in course_overview block
+ * Gets user course sorting preference in block_course_overview block
  *
  * @return array list of course ids
  */
@@ -132,7 +132,7 @@ function block_course_overview_get_child_shortnames($courseid) {
 }
 
 /**
- * Returns maximum number of courses which will be displayed in course_overview block
+ * Returns maximum number of courses which will be displayed in block_course_overview block
  *
  * @param bool $showallcourses if set true all courses will be visible.
  * @return int maximum number of courses

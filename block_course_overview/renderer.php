@@ -15,7 +15,7 @@
 // along with Moodle.  If not, see <http://www.gnu.org/licenses/>.
 
 /**
- * course_overview block rendrer
+ * block_course_overview block rendrer
  *
  * @package    block_course_overview
  * @copyright  2012 Adam Olley <adam.olley@netspot.com.au>
@@ -24,7 +24,7 @@
 defined('MOODLE_INTERNAL') || die;
 
 /**
- * Course_overview block rendrer
+ * block_course_overview block rendrer
  *
  * @copyright  2012 Adam Olley <adam.olley@netspot.com.au>
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
@@ -32,13 +32,13 @@ defined('MOODLE_INTERNAL') || die;
 class block_course_overview_renderer extends plugin_renderer_base {
 
     /**
-     * Construct contents of course_overview block
+     * Construct contents of block_course_overview block
      *
      * @param array $courses list of courses in sorted order
      * @param array $overviews list of course overviews
-     * @return string html to be displayed in course_overview block
+     * @return string html to be displayed in block_course_overview block
      */
-    public function course_overview($courses, $overviews) {
+    public function block_course_overview($courses, $overviews) {
         $html = '';
         $config = get_config('block_course_overview');
         $ismovingcourse = false;
@@ -68,7 +68,7 @@ class block_course_overview_renderer extends plugin_renderer_base {
             $html .= get_string('movingcourse', 'block_course_overview', $a);
             $html .= $this->output->box_end();
 
-            $moveurl = new moodle_url('/blocks/course_overview/move.php',
+            $moveurl = new moodle_url('/blocks/block_course_overview/move.php',
                         array('sesskey' => sesskey(), 'moveto' => 0, 'courseid' => $movingcourseid));
             // Create move icon, so it can be used.
             $movetofirsticon = html_writer::empty_tag('img',
@@ -132,7 +132,7 @@ class block_course_overview_renderer extends plugin_renderer_base {
             $html .= $this->output->box_end();
             $courseordernumber++;
             if ($ismovingcourse) {
-                $moveurl = new moodle_url('/blocks/course_overview/move.php',
+                $moveurl = new moodle_url('/blocks/block_course_overview/move.php',
                             array('sesskey' => sesskey(), 'moveto' => $courseordernumber, 'courseid' => $movingcourseid));
                 $a = new stdClass();
                 $a->movingcoursename = $courses[$movingcourseid]->fullname;

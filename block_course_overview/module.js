@@ -113,7 +113,7 @@ M.block_course_overview.save = function() {
         sesskey : M.cfg.sesskey,
         sortorder : sortorder
     };
-    Y.io(M.cfg.wwwroot+'/blocks/course_overview/save.php', {
+    Y.io(M.cfg.wwwroot+'/blocks/block_course_overview/save.php', {
         method: 'POST',
         data: build_querystring(params),
         context: this

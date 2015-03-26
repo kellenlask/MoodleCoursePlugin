@@ -21,7 +21,7 @@
  * @copyright  1999 onwards Martin Dougiamas (http://dougiamas.com)
  * @license    http://www.gnu.org/copyleft/gpl.html GNU GPL v3 or later
  */
-require_once($CFG->dirroot.'/blocks/course_overview/locallib.php');
+require_once($CFG->dirroot.'/blocks/block_course_overview/locallib.php');
 
 /**
  * Course overview block
@@ -43,7 +43,7 @@ class block_course_overview extends block_base {
     }
 
     /**
-     * Return contents of course_overview block
+     * Return contents of block_course_overview block
      *
      * @return stdClass contents of block
      */
@@ -90,7 +90,7 @@ class block_course_overview extends block_base {
             $this->content->text .= get_string('nocourses','my');
         } else {
             // For each course, build category cache.
-            $this->content->text .= $renderer->course_overview($sortedcourses, $overviews);
+            $this->content->text .= $renderer->block_course_overview($sortedcourses, $overviews);
             $this->content->text .= $renderer->hidden_courses($totalcourses - count($sortedcourses));
         }
 
