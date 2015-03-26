@@ -26,4 +26,4 @@ defined('MOODLE_INTERNAL') || die();
 
 $plugin->version   = 2014051200;        // The current plugin version (Date: YYYYMMDDXX)
 $plugin->requires  = 2014050800;        // Requires this Moodle version
-$plugin->component = 'block_course_overview'; // Full name of the plugin (used for diagnostics)
+$plugin->component = 'block'; // Full name of the plugin (used for diagnostics)
