@@ -13,6 +13,7 @@ class offlinecourses_form extends moodleform {
     }
 
 //End public function validation($data, $files)
+	return array();
 }
 
 ?>
