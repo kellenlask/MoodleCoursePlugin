@@ -26,9 +26,18 @@ echo $OUTPUT->header();
         <br>
                 
 	<label for="Offline">Offline Course </label> 
-        <input type="checkbox" name="offline" type="" method='post' />
-    
-	
+        <input type="checkbox" name="offline" onclick="return showInfo();" type="" method='post' />
+        
+        //When offline course is checked, drop down table of the offline course info. appears.
+        
+        <tr id="" class="" >
+            <td colspan="4">
+            Class:   <br />
+            Address: <br />
+            City:    <br />
+            State:   <br />
+            ZIP:     <br />
+        </tr>
         <br>
         <input type="submit" value="">
 </form>
