@@ -8,8 +8,11 @@
       <FIELDS>
         <FIELD NAME="id" 	TYPE="int" LENGTH="10" NOTNULL="true" SEQUENCE="true"/>
         <FIELD NAME="status"   	TYPE="varchar" LENGTH="15" NOTNULL="true" SEQUENCE="false" ENUM="false" />
-        <FIELD NAME="address"   TYPE="varchar" LENGTH="255" NOTNULL="true" SEQUENCE="false" ENUM="false" />
         <FIELD NAME="site"   	TYPE="varchar" LENGTH="255" NOTNULL="true" SEQUENCE="false" ENUM="false" />
+        <FIELD NAME="address"   TYPE="varchar" LENGTH="255" NOTNULL="true" SEQUENCE="false" ENUM="false" />
+        <FIELD NAME="city"   	TYPE="varchar" LENGTH="255" NOTNULL="true" SEQUENCE="false" ENUM="false" />
+        <FIELD NAME="state"   	TYPE="varchar" LENGTH="255" NOTNULL="true" SEQUENCE="false" ENUM="false" />
+        <FIELD NAME="zip"   	TYPE="varchar" LENGTH="5" NOTNULL="true" SEQUENCE="false" ENUM="false" />
       </FIELDS>
       <KEYS>
         <KEY NAME="primary" TYPE="primary" FIELDS="id"/>
